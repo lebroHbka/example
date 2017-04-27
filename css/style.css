@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*-----nav------*/
+
+.nav-custom{
+    border: 0;
+    padding: 5vh 0;
+    background-color: rgba(0,0,0,0);
+}
+
+.nav-shrink{
+    padding: 1.5vh 0;
+    background-color: rgba(42, 44, 45,1);
+    transition: padding 0.5s ease 0s;
+}
+
+#menu_list{
+    margin-right: 7vw;
+}
+
+.nav-item>a{
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.active>a{
+    background-color: #fff !important;
+    border-radius: 8px;
+    color: #EF4035 !important;
+    transition: background 0.17s linear 0s;
+}
+
+
+/*HEADER*/
+header{
+    background-image: url(../image/main_bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+/*second section*/
