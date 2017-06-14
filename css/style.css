@@ -1,42 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+html{
+    font-size: 14px;
 }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #292b2c;
+}
+section{
+    padding: 9vw 0;
+}
+
+hr{
+    width: 15vw;
+    border: 0;
+    border-bottom: 4px double #EF4035;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 600 !important;
+}
+
+h5{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.1rem;
+}
+
 
 /*-----nav------*/
 
 .nav-custom{
     border: 0;
-    padding: 5vh 0;
-    background-color: rgba(0,0,0,0);
+    padding: 2.3vw 0;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 1rem;
 }
 
 .nav-shrink{
     padding: 1.5vh 0;
     background-color: rgba(42, 44, 45,1);
-    transition: padding 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 #menu_list{
     margin-right: 7vw;
 }
 
-.nav-item>a{
-    color: rgba(255, 255, 255, 0.9) !important;
+.nav-item{
+    padding: 0;
+
 }
 
+.nav-item>a{
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    margin-right: 8px;
+
+}
+
+.nav-item>a:hover{
+    transition: border 0.2s linear 0s;
+    border-bottom: 2px solid #EF4035;
+}
+
+.nav-item:focus a{
+    border: 0 !important;
+}
+
+
 .active>a{
+    border-bottom: 2px solid rgba(0,0,0,0)!important;
     background-color: #fff !important;
     border-radius: 8px;
     color: #EF4035 !important;
     transition: background 0.17s linear 0s;
 }
 
+.nav-logo{
+    display: inline-block;
+    height: 4vw;
+    max-height: 70px;
+    margin-top: -2.5vh;
+}
+
+.nav-logo+span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
 
 /*HEADER*/
 header{
-    background-image: url(../image/main_bg.jpg);
+    background-image: url(../img/bg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
@@ -46,9 +106,366 @@ header{
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
+
+}
+
+.main-page-text{
+    margin-top: 40vh;
+    color: white;
+}
+header h1{
+    font-size: 8rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+header .header-descr{
+    color: rgb(190, 190, 190);
+    font-size: 1.1rem;
+}
+
+.scroll-btn{
+    border: 2px solid #fff;
+    border-radius: 100% !important;
+    height: 50px;
+    width: 50px;
+}
+
+.header-btn{
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 25px);
+}
+
+.scroll-btn:hover{
+    opacity: 0.5;
+    transition: all 0.2s linear 0.03s;
+}
+
+.scroll-arrow{
+    font-size: 40px;
+    color: white;
+    text-align:center;
+    position: relative;
+    top: 3px;
+    left: -2px;
+    vertical-align: middle;
 }
 
 
+/*about section*/
+
+#about_img{
+    background-size: cover;
+    width: 100%;
+    -webkit-box-shadow: 0 0 5px 2px;
+    box-shadow: 0 0 5px 2px;
+    margin-top: 1.6rem;
+}
+
+#about{
+    padding: 5vw;
+}
+
+.about-header{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.about-header hr{
+    width: 11rem;
+}
+
+#about p{
+    text-align: justify;
+    font-size: 1.03rem;
+    line-height: 1.8rem;
+    margin: 1rem auto;
+}
+
+#about ul{
+    list-style: none;
+    border-left: 5px solid #EF4035;
+    padding-left: 3rem;
+    height: 70px;
+    margin: 1.2rem auto;
+}
+
+#about li{
+    padding-top: 1.6%;
+}
+
+.about-sks-info i{
+    font-size: 1.07rem;
+    line-height: 1.3rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    color: #fff;
+    background-color: rgb(3, 117, 158);
+    border-radius: 100%;
+}
+
+.about-sks-info span:hover{
+    cursor: pointer;
+    border-bottom: 1px dotted rgb(3, 117, 158);
+}
+
+.about-sks-info span:hover i{
+    background-color: #fff;
+    color: rgb(3, 117, 158);
+    border: 1px solid rgb(3, 117, 158);
+    transition: all 0.19s linear 0.01s;
+}
 
 
-/*second section*/
+/*=========== work section ==========*/
+
+.works-box{
+    height: 100vh;
+}
+
+.works-panel {
+    height: 20vh;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.works-panel span{
+    display: inline-block;
+    padding: 0 10px;
+    }
+
+.works-panel i{
+    background: #fff;
+    font-size: 4rem;
+    transform: translateY(-5vh);
+    margin: 0;
+    padding: 0 20px;
+    text-shadow: 0px 8px 5px rgba(201, 201, 201, 0.5);
+    color: #EF4035;
+}
+
+.works-panel:hover i{
+    color: #EF4035;
+    text-shadow: 0px 3px 4px rgba(201, 201, 201, 0.9);
+    transform: translateY(-4.3vh);
+    transition: all .19s linear 0.2s;
+}
+
+.works-row{
+    margin-bottom: 9vh;
+}
+
+#works{
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 3vw;
+    }
+
+.works-header{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+
+    padding-top: 6vh;
+    margin-bottom: 25vh;
+}
+
+.works-header h2{
+    font-weight: 500;
+}
+.works-header hr{
+    margin: 2rem auto;
+}
+
+.works-btn{
+    width: 6.1rem;
+    margin: 0 auto;
+    background-color: transparent;
+    position: relative;
+    top: 9vh;
+}
+
+.works-btn:hover{
+    top: 12vh;
+    transition: .5s ease 0.1s;
+    cursor: pointer;
+}
+
+.works-btn i{
+    color: #EF4035;
+    font-size: 6rem;
+    padding: 0 !important;
+}
+
+/*========= problems section =======*/
+
+#problems{
+    padding-top: 5.5vh;
+    padding-bottom: 0;
+}
+
+
+.problems-bg{
+    background-image: url(../img/bg-quote.jpg);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.problems-description{
+    margin: 0;
+    height: 100vh;
+}
+
+.problems-header{
+    margin-top: 35vh;
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.problems-header span{
+    color: #EF4035;
+}
+
+.problems-btn{
+    display: inline-block;
+    width: 12rem;
+    padding: .8rem 0;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: 1px solid #fff !important;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: .04rem;
+    text-transform: uppercase;
+}
+
+.problems-btn:hover{
+    background-color: #fff;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+    color: #EF4035;
+    transition: all .4s ease 0s;
+    text-decoration: none;
+}
+
+.problems-btn:focus{
+    text-decoration: none;
+    background-color: #fff;
+    color: #EF4035;
+}
+
+#problems-block{
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+}
+
+.problems-text{
+    margin-bottom: 18vh;
+    padding-top: 3vh;
+    font-size: 1.5rem;
+}
+
+.problems-text p{
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.problems-text img{
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+}
+
+
+.decision{
+    margin-left: 3vw;
+    margin-bottom: 6rem;
+}
+
+.decision-header{
+    border-radius: 0 10px 10px 0;
+    background-color: #ebebeb;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 2rem;
+}
+
+.decision-header-arrow{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #EF4035;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+.decision a:hover i{
+    transform: translateY(10%);
+    transition: all 0.3s ease 0.05s;
+}
+
+.decision-text{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.decision-text p{
+    margin-top: 2rem;
+}
+
+/*========= clients section =======*/
+#clients{
+    padding-top: 5vw;
+}
+
+.clients-logo{
+    opacity: .85;
+}
+
+.clients-logo:hover{
+    opacity: 1;
+    transition: all .7s ease .1s;
+}
+
+/*========= contacts footer =======*/
+
+.contacts-bg{
+    padding-top: 0;
+    height: 95vh;
+    background-image: url(../img/7.jpg);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.contacts-item{
+    margin-top: 45vh;
+
+    color: #fff;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.copy{
+    position: relative;
+    bottom: -25vh;
+    color: #fff;
+    font-size: 2.3rem;
+    margin: 0;
+    padding: 0;
+}

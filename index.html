@@ -3,88 +3,458 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 
-        <title>RSRS</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:400,500,600,900|Open+Sans:400,700|Ubuntu+Condensed" rel="stylesheet">
+
+
+        <title>KSKS</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" >
     </head>
 
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="80">
+    <body data-spy="scroll" data-target=".navbar" data-offset="80" id="body">
 
-        <nav class="navbar navbar-inverse navbar-fixed-top nav-custom">
+        <!-- navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top nav-custom slow-scroll">
             <div class="container">
                 <div class="row">
-                    <div class="navbar-header col-md-1 col-xs-3">
-                        <a href="index.html" class="navbar-brand ">
-                            MYLOGO
+                    <div class="navbar-header col-lg-3 col-md-2 col-xs-3">
+                        <a href="#body" class="navbar-brand ">
+                            <div>
+                                <img class="nav-logo" src="img/logo.png" alt="KSKS logo" title="KSKS logo">
+                                <span>KSKS</span>
+                            </div>
                         </a>
                     </div>
-                    <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1 col-xs-9 col-xs-offset-0">
+                    <div class="col-lg-8 col-lg-offset-1 col-md-10 col-xs-9 col-xs-offset-0">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item"><a href="#section1">О компании</a></li>
-                            <li class="nav-item"><a href="#section2">Список выполняемых работ</a></li>
-                            <li class="nav-item"><a href="#">Проблемы и решения</a></li>
-                            <li class="nav-item"><a href="#">Наши клиенты</a></li>
-                            <li class="nav-item"><a href="#">Контакты</a></li>
+                            <li class="nav-item"><a href="#about">О компании</a></li>
+                            <li class="nav-item"><a href="#works">Список услуг</a></li>
+                            <li class="nav-item"><a href="#problems">Проблемы и решения</a></li>
+                            <li class="nav-item"><a href="#clients">Наши клиенты</a></li>
+                            <li class="nav-item"><a href="#contacts">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <header>
 
+        <!-- header -->
+        <header>
+            <div class="container text-center">
+                <div class="row main-page-text">
+                    <div class="col-xs-12">
+                        <h1>KSKS</h1>
+                        <hr>
+                        <span class="header-descr">Поектирование, инсталяция локальных сетей, промавтоматика,<br>електротехнические сети, видеонаблюдение, сварка оптоволокна</span>
+                    </div>
+                </div>
+
+                <div class="row slow-scroll">
+                        <div class="scroll-btn header-btn">
+                            <a href="#about">
+                                <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
         </header>
 
-        <section id="section1">
+
+        <!-- about section -->
+        <section id="about">
             <div class="container">
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos magnam suscipit, cupiditate optio aspernatur deleniti voluptate inventore fuga amet. Aut quibusdam aperiam maiores doloribus nostrum quo blanditiis numquam hic, suscipit.</div>
-                <div>Tempore veniam id, placeat dolorum a quasi corrupti itaque reiciendis enim non dignissimos illum quisquam molestiae cum dolorem, beatae distinctio perferendis magni ipsum error, repudiandae. Molestiae maxime, necessitatibus vel qui.</div>
-                <div>Recusandae corporis doloremque, quae placeat possimus aliquid earum aspernatur cum tenetur. Veritatis asperiores, temporibus architecto iusto fugit, velit repellat ad harum quia unde nihil odio, laboriosam. Ad hic sint quo.</div>
-                <div>Voluptatibus necessitatibus sed ratione sunt quod eius, cumque aliquam odit assumenda voluptas ut, natus nostrum dolor non aspernatur blanditiis dolorum eligendi! Voluptatem qui nemo at dolorum, beatae vero possimus vitae.</div>
-                <div>Accusantium saepe ab dolores debitis, dicta nesciunt labore sapiente cupiditate ut quae vitae iusto natus, earum? Possimus odio magni officiis quae quod veritatis assumenda hic, quis, iste magnam accusantium consectetur.</div>
-                <div>Rerum sed fuga odit, explicabo ea quis! Architecto eveniet tenetur quibusdam ducimus reiciendis ipsum molestiae nihil ratione neque fugit ullam, earum nostrum. Inventore, id labore rerum soluta. Dolores at, nostrum!</div>
-                <div>Provident velit laborum aliquam cumque odit qui mollitia! Minus ratione eos commodi, quo quod eligendi, temporibus incidunt. Saepe ut asperiores, facilis. Rerum ut animi sunt facilis quo, qui distinctio deserunt.</div>
-                <div>Iusto id voluptates, reprehenderit perspiciatis? Nemo rem, quas consequatur placeat eos odit esse et magnam doloremque quisquam dicta magni laborum harum veritatis. Exercitationem suscipit at veritatis rerum odio facere voluptas.</div>
-                <div>Ipsum eaque facilis, voluptate fugit provident sint! Iusto enim, optio facere iure, nulla odit, nobis natus quasi quibusdam amet temporibus voluptatum laborum, quae doloremque voluptatibus explicabo dolor. Necessitatibus, cum nobis!</div>
-                <div>Nam odit mollitia id ullam voluptates ab doloribus, aliquid eius sequi possimus dignissimos reprehenderit, voluptatem eaque aspernatur tempore doloremque corporis. Odio quisquam cum laboriosam possimus optio ratione numquam recusandae veniam.</div>
-                <div>Maiores fuga, quia pariatur, aliquid, fugiat, vel fugit quos numquam voluptas magnam recusandae doloribus nemo accusantium officiis cumque quibusdam iste sed perferendis qui atque. Facilis porro, eveniet! Accusamus, officiis, magnam.</div>
-                <div>Est mollitia maiores, corporis debitis quod ratione dicta quam illo, itaque in, minus laudantium sint voluptate praesentium vel magni aliquid beatae accusamus. Placeat a iste sequi sapiente, eaque sit maxime.</div>
-                <div>Maxime reiciendis doloribus vel impedit deleniti similique, nisi dicta, itaque ex facilis in delectus eligendi minima porro animi nihil? Dolorum eveniet quis recusandae quaerat voluptatem quas ratione eius aliquam, a.</div>
-                <div>Vero at quam distinctio accusantium debitis modi qui laboriosam dolores labore cum doloremque consequuntur assumenda veniam repellat ratione libero odio aliquid tenetur provident nostrum itaque quo nobis, quis aperiam. Ipsum.</div>
-                <div>Placeat ipsam omnis rerum, ea dolorum temporibus laudantium odit quod explicabo! Minima molestias nulla, nemo beatae rem, molestiae vero expedita architecto nostrum excepturi non iste alias temporibus cumque magni asperiores.</div>
-                <div>Laboriosam quia praesentium odit id odio illum magnam natus temporibus quam itaque omnis eius nihil repellendus, consequatur molestiae harum ratione iure aut. Error nihil ab nulla eveniet hic, laboriosam, deleniti.</div>
-                <div>Inventore magni repellat blanditiis, ea eveniet voluptas est fugiat iste quidem in. Quis nulla aut beatae a ducimus sunt soluta tempora distinctio, autem aliquam praesentium eligendi? Sunt aliquam, architecto tenetur.</div>
-                <div>Atque mollitia officia, impedit ipsa earum veritatis! Accusantium aperiam voluptatibus perspiciatis praesentium sit eos fugit adipisci eaque assumenda molestiae id, rerum cupiditate quo sunt ullam! Quaerat odio quod adipisci unde.</div>
-                <div>Quaerat laboriosam maxime aliquid cumque repudiandae harum impedit quas. Tempore repellendus ad ab! Neque, explicabo, veniam! Voluptatibus dolores error asperiores quod fugit ullam, voluptatum cum veritatis distinctio magni ut nam.</div>
-                <div>Nam dolores cupiditate, ducimus, quidem, laboriosam voluptatem eaque ipsa voluptatibus cum delectus illo, tenetur consequatur? Repellendus, magnam, accusamus suscipit commodi enim iste recusandae, quam, quos ipsam nam vel odit hic!</div>
+                <div class="row">
+                    <h2 class="text-center about-header">KSKS</h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>KSKS ведёт успешную работу с 1990г. Основной областью деятельности компании является <strong>построение современных кабельных систем</strong> для создания телекоммуникационной инфраструктуры зданий:
+                        <ul>
+                            <li class="about-sks-info">
+                                <span data-toggle="tooltip" data-placement="right" title="Кабельные системы служат платформой для работы информационных систем, в том числе: компьютерных сетей, телефонных сетей, контроля доступа и видео наблюдения">структурированные кабельные системы(СКС)   <i class="fa fa-info" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li>электрические сети</li>
+                        </ul>
+                        </p>
+
+                        <p>Мы строим современные и правильные кабельные системы и имеем в своем арсенале специальные решения для кабельных систем различного масштаба(от рабочей группы до зданий), ориентированные на различные условия применения(от офиса до заводских условий с агрессивными средами)
+                        </p>
+                        <p>Наши кабельные системы основаны на <b>продукции мировых лидеров</b>, отвечают требованиям международных стандартов, поддерживают высочайшую производительность и надежность.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/about_1.jpg" alt="Пример работ" id="about_img">
+                    </div>
+                </div>
+
+        </section>
+
+
+        <!-- works section -->
+        <section id="works">
+            <div class="container-fluid text-center works-header">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Список наших услуг</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h5>Выполняем весь комплекс работ по проектированию, установке и сопровождению кабельных, компьютерных, электрических, телефонных систем и сетей
+                        </h5>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="works-btn">
+                        <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                    </div>
+                </div>
+
+            </div>
+
+                <!-- work examples -->
+            <div class="container text-center works-box">
+                <div class="row works-row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="works-panel">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <span>Предпроектное обследование в Киеве и регионах Украины
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="works-panel">
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    <span>Разработка технического задания, эскизных, технических и рабочих проектов СКС и электрики
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="works-panel">
+                                    <i class="fa fa-truck" aria-hidden="true"></i>
+                                    <span>Поставка оборудования СКС, электрики, телефонии, видеонаблюдения
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row works-row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="works-panel">
+                                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                                    <span>Монтаж и инсталяция структурированной кабельной системы и электропитания
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="works-panel">
+                                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                                    <span>Тестирование и сертификация СКС
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="works-panel">
+                                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                                    <span>Модернизация и доработка существующих кабельных сетей
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row works-row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="works-panel">
+                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
+                                    <span>Создание и дополнение эксплуатационной документации СКС и електрики
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="works-panel">
+                                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                    <span>&nbsp&nbsp&nbsp&nbspКомплексный договор&nbsp&nbsp&nbsp&nbsp</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="works-panel">
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                    <span>Гарантия от производителя до 25 лет
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <br>
-        <br>
-        <section id="section2">
+
+        <!-- problems section -->
+        <section id="problems">
+            <div class="container-fluid problems-bg">
+                <div class="row text-center problems-description">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <h4 class="problems-header"><span>Модернизация</span> существующих структурированных кабельных <span>сетей</span></h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row slow-scroll">
+                        <a href="#problems-block" class="problems-btn">
+                            Решения
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="container">
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos magnam suscipit, cupiditate optio aspernatur deleniti voluptate inventore fuga amet. Aut quibusdam aperiam maiores doloribus nostrum quo blanditiis numquam hic, suscipit.</div>
-                <div>Tempore veniam id, placeat dolorum a quasi corrupti itaque reiciendis enim non dignissimos illum quisquam molestiae cum dolorem, beatae distinctio perferendis magni ipsum error, repudiandae. Molestiae maxime, necessitatibus vel qui.</div>
-                <div>Recusandae corporis doloremque, quae placeat possimus aliquid earum aspernatur cum tenetur. Veritatis asperiores, temporibus architecto iusto fugit, velit repellat ad harum quia unde nihil odio, laboriosam. Ad hic sint quo.</div>
-                <div>Voluptatibus necessitatibus sed ratione sunt quod eius, cumque aliquam odit assumenda voluptas ut, natus nostrum dolor non aspernatur blanditiis dolorum eligendi! Voluptatem qui nemo at dolorum, beatae vero possimus vitae.</div>
-                <div>Accusantium saepe ab dolores debitis, dicta nesciunt labore sapiente cupiditate ut quae vitae iusto natus, earum? Possimus odio magni officiis quae quod veritatis assumenda hic, quis, iste magnam accusantium consectetur.</div>
-                <div>Rerum sed fuga odit, explicabo ea quis! Architecto eveniet tenetur quibusdam ducimus reiciendis ipsum molestiae nihil ratione neque fugit ullam, earum nostrum. Inventore, id labore rerum soluta. Dolores at, nostrum!</div>
-                <div>Provident velit laborum aliquam cumque odit qui mollitia! Minus ratione eos commodi, quo quod eligendi, temporibus incidunt. Saepe ut asperiores, facilis. Rerum ut animi sunt facilis quo, qui distinctio deserunt.</div>
-                <div>Iusto id voluptates, reprehenderit perspiciatis? Nemo rem, quas consequatur placeat eos odit esse et magnam doloremque quisquam dicta magni laborum harum veritatis. Exercitationem suscipit at veritatis rerum odio facere voluptas.</div>
-                <div>Ipsum eaque facilis, voluptate fugit provident sint! Iusto enim, optio facere iure, nulla odit, nobis natus quasi quibusdam amet temporibus voluptatum laborum, quae doloremque voluptatibus explicabo dolor. Necessitatibus, cum nobis!</div>
-                <div>Nam odit mollitia id ullam voluptates ab doloribus, aliquid eius sequi possimus dignissimos reprehenderit, voluptatem eaque aspernatur tempore doloremque corporis. Odio quisquam cum laboriosam possimus optio ratione numquam recusandae veniam.</div>
-                <div>Maiores fuga, quia pariatur, aliquid, fugiat, vel fugit quos numquam voluptas magnam recusandae doloribus nemo accusantium officiis cumque quibusdam iste sed perferendis qui atque. Facilis porro, eveniet! Accusamus, officiis, magnam.</div>
-                <div>Est mollitia maiores, corporis debitis quod ratione dicta quam illo, itaque in, minus laudantium sint voluptate praesentium vel magni aliquid beatae accusamus. Placeat a iste sequi sapiente, eaque sit maxime.</div>
-                <div>Maxime reiciendis doloribus vel impedit deleniti similique, nisi dicta, itaque ex facilis in delectus eligendi minima porro animi nihil? Dolorum eveniet quis recusandae quaerat voluptatem quas ratione eius aliquam, a.</div>
-                <div>Vero at quam distinctio accusantium debitis modi qui laboriosam dolores labore cum doloremque consequuntur assumenda veniam repellat ratione libero odio aliquid tenetur provident nostrum itaque quo nobis, quis aperiam. Ipsum.</div>
+                <div class="row text-center" id="problems-block">
+                    <h2>Проблемы и решения</h2>
+                </div>
+                <hr>
+                <div class="row problems-text">
+                    <div class="col-md-8">
+                        <p>Структурированная кабельная система(СКС) живет и развивается вместе с развитием организаций, офиса и зданием.  Большинство текущих задач решаются проведением коммутаций на кроссах и рабочих местах.</p>
+                        <p>Но обязательно наступит время, когда существующие ресурсы вашей СКС будут исчерпаны и нужно будет ее развивать.</p>
+                        <p>Большинство ваших ситуаций не являются чрезвычайными или уникальными, они встречались ранее у других. Использование нашего опыта их решений, позволят Вам сэкономить время, деньги и нервы.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/company.png" alt="company">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="decision">
+                    <div class="row">
+                        <a href="#collapse1" data-toggle="collapse">
+                            <div class="col-md-1 decision-header-arrow">
+                                <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                            </div>
+                        </a>
+                        <div class="col-md-10 decision-header ">
+                            Не хватает портов для подключения нового оборудования на рабочем месте
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="collapse1"class="col-md-10 col-md-offset-1  decision-text panel-collapse collapse in">
+                            <p>На рабочем месте розетка 2xRJ45. К одному порту подключен компьютер, к другому телефон. Нужно подключить еще и факс? Используем промежуточную розетку-разветвитель: 1xRJ45 -> 2xRJ11 <br>Нужно подключить дополнительный ПК? <br>Используем промежуточную розетку-разветвитель: 1xRJ45 -> 2xRJ25</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decision">
+                    <div class="row">
+                        <a href="#collapse2" data-toggle="collapse">
+                            <div class="col-md-1 decision-header-arrow">
+                                <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                            </div>
+                        </a>
+                        <div class="col-md-10 decision-header ">
+                            Не хватает розеток для подключения новых пользователей в помещении
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="collapse2"class="col-md-10 col-md-offset-1  decision-text panel-collapse collapse in">
+                            <p>На рабочем месте розетка 2xRJ45. Сколько к ней можно подключить полноценных пользователей? От двух до шести, обеспечив каждого из них подключением к компьютерной и телефонной сети.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decision">
+                    <div class="row">
+                        <a href="#collapse4" data-toggle="collapse">
+                            <div class="col-md-1 decision-header-arrow">
+                                <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                            </div>
+                        </a>
+                        <div class="col-md-10 decision-header ">
+                            Переезжае отдел в другое помещение
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="collapse4"class="col-md-10 col-md-offset-1  decision-text panel-collapse collapse in">
+                            <p>Нужно в комнате создать новые рабочие места. Каждое рабочее место должно быть обеспечено электропитанием, доступом к компьютерной и телефонной сети.</p> <p><b>Электропитание.</b> Прокладка электрических кабелей к распределительному электрощитку и установка новых автоматов, если нет места для установки автоматов, то установка дополнительного электрощита.</p>
+                            <p><b>СКС.</b> Прокладка информационных кабелей к центральному или локальному кроссу. Установка в кроссе кросс-панелей для новых рабочих мест.</p>
+                            <p><b>Трассы.</b> Обычно в этом случае ремонта в помещении не планируется и скорее всего разводка кабеля в комнате будет выполняться в коробках.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decision">
+                    <div class="row">
+                        <a href="#collapse5" data-toggle="collapse">
+                            <div class="col-md-1 decision-header-arrow">
+                                <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                            </div>
+                        </a>
+                        <div class="col-md-10 decision-header ">
+                            Берутся в аренду новые помещения или этаж
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="collapse5"class="col-md-10 col-md-offset-1  decision-text panel-collapse collapse in">
+                            <p>Повышаются требования к центру коммутации. Возможно, не хватит места в монтажном шкафу или кроссовой комнате.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decision">
+                    <div class="row">
+                        <a href="#collapse6" data-toggle="collapse">
+                            <div class="col-md-1 decision-header-arrow">
+                                <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                            </div>
+                        </a>
+                        <div class="col-md-10 decision-header ">
+                            Хаос кросс-кабелей в монтажном шкафу, надо наводить порядок
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="collapse6"class="col-md-10 col-md-offset-1  decision-text panel-collapse collapse in">
+                            <p>Специальные решения для выполнения кроссирования в монтажном шкафу: прозрачность, регулярность, надежность, дизайн.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decision">
+                    <div class="row">
+                        <a href="#collapse7" data-toggle="collapse">
+                            <div class="col-md-1 decision-header-arrow">
+                                <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                            </div>
+                        </a>
+                        <div class="col-md-10 decision-header ">
+                            Становится много серверов, надо упорядочивать их хранение
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="collapse7"class="col-md-10 col-md-offset-1  decision-text panel-collapse collapse in">
+                            <p>Вначале у вас один сервер и вы размещаете его на столе, через пол года их уже два, через год три, а сейчас уже пол десятка.</p> <p>Обилие мониторов, клавиатур, блоков питания, кабелей и на столах с ними просто не справиться. А их количество все продолжает увеличиваться. А вдобавок еще и ограниченное пространство.</p>
+                            <p> Экономичные специальные решения для размещения множества серверов в ограниченном пространстве и управления ими.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decision">
+                    <div class="row">
+                        <a href="#collapse8" data-toggle="collapse">
+                            <div class="col-md-1 decision-header-arrow">
+                                <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                            </div>
+                        </a>
+                        <div class="col-md-10 decision-header ">
+                            В существующем монтажном шкафу не хватает места
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="collapse8"class="col-md-10 col-md-offset-1  decision-text panel-collapse collapse in">
+                            <p>Замена монтажного шкафа без нарушения работы офиса</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decision">
+                    <div class="row">
+                        <a href="#collapse9" data-toggle="collapse">
+                            <div class="col-md-1 decision-header-arrow">
+                                <i class="fa fa-angle-down fa-fw scroll-arrow"></i>
+                            </div>
+                        </a>
+                        <div class="col-md-10 decision-header ">
+                            Перенести серверную(кроссовую) комнату в другое помещение
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="collapse9"class="col-md-10 col-md-offset-1  decision-text panel-collapse collapse in">
+                            <p>Специальные решения по обеспечению возможности перемещения серверной(кроссовой) комнаты в другое помещение</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- clients section -->
+        <section id="clients">
+            <div class="container">
+                <div class="row text-center">
+                    <h2>Наши клиенты</h2>
+                    <hr>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4 clients-logo">
+                        <img src="img/fora.png" alt="Fora logo" title="Фора">
+                    </div>
+                    <div class="col-md-4 clients-logo">
+                        <img src="img/kievstart.png" alt="Kievstart logo" title="Kievstar">
+                    </div>
+                    <div class="col-md-4 clients-logo">
+                        <img src="img/lotto.png" alt="Lotto logo" title="Lotto">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4 clients-logo">
+                        <img src="img/providna.png" alt="Providna logo" title="Провiдна">
+                    </div>
+                    <div class="col-md-4 clients-logo">
+                        <img src="img/sibbank.png" alt="Ukrsibbank logo" title="Укрсиббанк">
+                    </div>
+                    <div class="col-md-4 clients-logo">
+                        <img src="img/paterson.png" alt="Paterson logo" title="Патэрсон">
+                    </div>
+                </div>
+
             </div>
         </section>
 
+
+        <footer id="contacts">
+            <div class="container-fluid contacts-bg">
+                <div class="row text-center">
+                    <div class="col-md-4 contacts-item">
+                            <i class="fa fa-phone"></i>
+                            <span>Телефон</span>
+                            <p>555-55-55</p>
+                    </div>
+                    <div class="col-md-4 contacts-item">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Адресс</span>
+                        <p>ул.Бориса 7А</p>
+                    </div>
+                    <div class="col-md-4 contacts-item">
+                        <i class="fa fa-envelope"></i>
+                        <span>Почта</span>
+                        <p>example@examplovi4.com</p>
+                    </div>
+                </div>
+                <div class="copy text-center">
+                    &copy 2017
+                </div>
+            </div>
+
+        </footer>
 
 
 
